@@ -40,7 +40,7 @@ h1 {
     h1 {
         color: antiquewhite;
         width: 100%;
-        font-size: 130%;
+        font-size: 160%;
         background: #471A1B;
         font-style: normal;
         display: flex;
@@ -66,13 +66,13 @@ button {
 
 @media screen and (min-width: 430px) {
     button {
-        padding: 10px 30px 5px;
+        padding: 15px 30px 5px;
         color: #471A1B;
         background: #fcbf49;
         border-radius: 69px;
         font-style: normal;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 25px;
         display: flex;
         top: 300px;
         position: relative;
