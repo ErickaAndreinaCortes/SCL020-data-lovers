@@ -26,7 +26,25 @@ export const reduceData = (arrayCharacters) => {
         return filterArrayForId;
 
     }
-    //esta función filtra a los personajes por sus casas, retornadonos el filtro realizado en la data reducida
+    /*showChracters es la función contiene la información que queremos mostrar 
+    de los personajes principales, esto lo logramos aplicando con el metodo map el cual 
+    nos entrega un nuevo array con la información solicitada*/
+export const containerInformation = (informationFirstCharacters) => {
+    return informationFirstCharacters.map(
+            (gente) =>
+            `<div class="contenedorDePersonajes">
+                <img src="" alt=""/>
+                <p>${gente.name}</p>
+                <p>${gente.birth}</p>
+                <p>${gente.species}</p>
+                <p>${gente.house}</p>
+                <p>${gente.patronus}</p>
+            </div>`
+        )
+        .join("");
+
+};
+//esta función filtra a los personajes por sus casas, retornadonos el filtro realizado en la data reducida
 export const houseFilter = (filterArrayForId, houseSelection) => {
 
         return filterArrayForId

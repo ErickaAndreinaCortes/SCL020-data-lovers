@@ -1,32 +1,17 @@
-import { reduceData, houseFilter, patronusFilter } from './data.js';
+import { reduceData, containerInformation, houseFilter, patronusFilter } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/harrypotter/data.js';
 //en esta constante estamos guardando a los personajes en total, antes de reducirla
 const characters = data.characters;
 
-/*esta variable guarda a la data reducida, y a su vez le aplicamos la función que nos muestra 
-a los personajes principales, esto lo logramos aplicando con el metodo map el cual 
-nos entrega un nuevo array con la información solicitada*/
-const datosPersonajesPrincipales = reduceData(characters);
+//esta variable guarda a la data reducida
+const informationFirstCharacters = reduceData(characters);
 //console.log(datosPersonajesPrincipales);
-const showPersonajes = (datosPersonajesPrincipales) => {
-    return datosPersonajesPrincipales.map(
-            (gente) =>
-            `<div class="contenedorDePersonajes">
-            <img src="" alt=""/>
-            <p>${gente.name}</p>
-            <p>${gente.birth}</p>
-            <p>${gente.species}</p>
-            <p>${gente.house}</p>
-            <p>${gente.patronus}</p>
-        </div>`
-        )
-        .join("");
 
-};
-
-const cambio = document.querySelector(".primeraMuestraPersonajes");
-cambio.innerHTML = showPersonajes(datosPersonajesPrincipales);
+/*esta variable nos hace los cambios en el dom, el inner nos inyecta la información 
+al div vacio*/
+const showOne = document.querySelector(".primeraMuestraPersonajes");
+showOne.innerHTML = containerInformation(informationFirstCharacters);
 //console.log(cambio.innerHTML);
 
 function funcionMostrarPersonajes() {
@@ -43,13 +28,13 @@ document.getElementById("item1").addEventListener("click", funcionMostrarPersona
 
 document.getElementById("seleccionMenuCasas").addEventListener("change", () => {
     const guardaSeleccionCasa = document.getElementById("seleccionMenuCasas").value;
-    const mostrarPrimerFiltro = houseFilter(datosPersonajesPrincipales, guardaSeleccionCasa);
+    const mostrarPrimerFiltro = houseFilter(informationFirstCharacters, guardaSeleccionCasa);
     console.log(mostrarPrimerFiltro);
     //console.log(guardaSeleccionCasa);
-    showPersonajes(mostrarPrimerFiltro);
+
     //console.log(mostrarPrimerFiltro);
     const cambioDos = document.querySelector(".primeraMuestraPersonajes");
-    cambioDos.innerHTML = showPersonajes(mostrarPrimerFiltro);
+    cambioDos.innerHTML = containerInformation(mostrarPrimerFiltro);
 
 });
 //const cambioDos = document.querySelector(".primeraMuestraPersonajes");
@@ -57,10 +42,10 @@ document.getElementById("seleccionMenuCasas").addEventListener("change", () => {
 //console.log(mostrarPrimerFiltro);
 
 
-const filtrandoPatronus = patronusFilter(datosPersonajesPrincipales);
+const filtrandoPatronus = patronusFilter(informationFirstCharacters);
 console.log(filtrandoPatronus);
-const showPatronus = (datosPersonajesPrincipales) => {
-    return datosPersonajesPrincipales.map(
+const showPatronus = (informationFirstCharacters) => {
+    return informationFirstCharacters.map(
             (gente) =>
             `<div class="contenedorDePersonajes">
             <img src="" alt=""/>
@@ -73,7 +58,7 @@ const showPatronus = (datosPersonajesPrincipales) => {
 };
 
 const cambio3 = document.querySelector(".primeraMuestraPersonajes");
-cambio3.innerHTML = showPatronus(datosPersonajesPrincipales);
+cambio3.innerHTML = showPatronus(informationFirstCharacters);
 //console.log(cambio.innerHTML);
 
 function funcionMostrarPatronus() {
