@@ -10,20 +10,16 @@
 
 <body>
 
-    <section class="contenedor">
+    <div class="contenedor">
         <header>
             <h1 id="tituloweb"> Harry Potter</h1>
-        </header>
-        <script src="main.js" type="module"></script>
-        <main>
             <p>
                 Harry Potter es una serie de novelas fantásticas escrita por la autora británica J. K. Rowling, en la que se describen las aventuras del joven aprendiz de magia y hechicería Harry Potter y sus amigos Hermione Granger y Ron Weasley, durante los años que
                 pasan en el Colegio Hogwarts de Magia y Hechicería. </p>
-
-        </main>
+        </header>
+        <script src="main.js" type="module"></script>
 
         <nav id="menu">
-
             <ul>
                 <li id="item1"> <a href="#">Personajes</a> </li>
                 <li class="barra">|</li>
@@ -34,23 +30,20 @@
                 <li id="item4"> <a href="index.html">Travesura realizada</a></li>
             </ul>
 
-
         </nav>
-
-
-
-
-        <label for="Casas">Casas</label>
-        <select name="Casas" id="seleccionMenuCasas">Casas
+        <main>
+            <section>
+                <label for="Casas">Casas</label>
+                <select name="Casas" id="seleccionMenuCasas">Casas
         <option value="Gryffindor">Gryffindor</option>
         <option value="Slytherin">Slytherin</option>
         <option value="Hufflepuff">Hufflepuff</option>
         <option value="Ravenclaw">Ravenclaw</option>
-    
-    </select>
-        <div id="loQueVoyAmostrar" class="primeraMuestraPersonajes"></div>
-
-    </section>
+        </select>
+                <div id="loQueVoyAmostrar" class="primeraMuestraPersonajes"></div>
+            </section>
+    </div>
+    </main>
 </body>
 
 </html>
