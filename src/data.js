@@ -38,7 +38,7 @@ export const containerInformation = (informationFirstCharacters) => {
                 <p>${gente.birth}</p>
                 <p>${gente.species}</p>
                 <p>${gente.house}</p>
-                <p>${gente.patronus}</p>
+               
             </div>`
         )
         .join("");
@@ -46,15 +46,15 @@ export const containerInformation = (informationFirstCharacters) => {
 };
 
 //Esta función oculta y muestra los personajes
-export function showAndHideCharacters() {
-    let mostrarPrincipales = document.getElementById("loQueVoyAmostrar"); //preguntar si esta linea puede ir aquí
-    if (mostrarPrincipales.style.display === "none") {
-        mostrarPrincipales.style.display = "block";
-    } else {
-        mostrarPrincipales.style.display = "none";
+export const showAndHideCharacters = () => {
+        let showAndHideOne = document.getElementById("loQueVoyAmostrar"); //preguntar si esta linea puede ir aquí
+        if (showAndHideOne.style.display === "none") {
+            showAndHideOne.style.display = "block";
+        } else {
+            showAndHideOne.style.display = "none";
+        }
     }
-}
-//esta función filtra a los personajes por sus casas, retornadonos el filtro realizado en la data reducida
+    //esta función filtra a los personajes por sus casas, retornadonos el filtro realizado en la data reducida
 export const houseFilter = (filterArrayForId, houseSelection) => {
 
         return filterArrayForId
@@ -69,6 +69,60 @@ export const patronusFilter = (filterArrayForId, patronus) => {
         .filter((animal) => animal.patronus == patronus);
 }
 
+
+export const showPatronus = (informationFirstCharacters) => {
+    return informationFirstCharacters.map(
+            (gente) =>
+            `<div class="contenedorDePersonajes">
+            <img src="" alt=""/>
+            <p>${gente.name}</p>
+            <p>${gente.patronus}</p>
+        </div>`
+        )
+        .join("");
+
+};
+
+//preguntar si puede quedar sin parametro de entrada
+export const showAndHidePatronus = () => {
+    let showAndHidetwo = document.getElementById("loQueVoyAmostrar");
+    if (showAndHidetwo.style.display === "none") {
+        showAndHidetwo.style.display = "block";
+    } else {
+        showAndHidetwo.style.display = "none";
+    }
+}
+
+
+//funcion que filtra las varitas
+export const wandFilter = (filterArrayForId, wand) => {
+    return filterArrayForId
+        .filter((wood) => wood.wand == wand);
+}
+
+
+export const showWand = (informationFirstCharacters) => {
+    return informationFirstCharacters.map(
+            (people) =>
+            `<div class="contenedorDePersonajes">
+            <img src="" alt=""/>
+            <p>${people.name}</p>
+            <p>${people.wand}</p>
+        </div>`
+        )
+        .join("");
+
+};
+
+//preguntar si puede quedar sin parametro de entrada
+export const showAndHideWand = () => {
+    let showAndHideThree = document.getElementById("loQueVoyAmostrar");
+    if (showAndHideThree.style.display === "none") {
+        showAndHideThree.style.display = "block";
+    } else {
+        showAndHideThree.style.display = "none";
+    }
+}
 
 //filtro para que el usuario busque
 /*export const search = (query) => {

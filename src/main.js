@@ -1,4 +1,4 @@
-import { reduceData, containerInformation, showAndHideCharacters, houseFilter, patronusFilter } from './data.js';
+import { reduceData, containerInformation, showAndHideCharacters, houseFilter, patronusFilter, showPatronus, showAndHidePatronus, wandFilter, showWand, showAndHideWand } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/harrypotter/data.js';
 //en esta constante estamos guardando a los personajes en total, antes de reducirla
@@ -18,48 +18,43 @@ showOne.innerHTML = containerInformation(informationFirstCharacters);
 document.getElementById("item1").addEventListener("click", showAndHideCharacters)
 
 
-
+//este metodo nos permite tomar el id y que se escuche el cambio que realice el usuario y se 
+//de la condicion del filtro
 document.getElementById("seleccionMenuCasas").addEventListener("change", () => {
-    const guardaSeleccionCasa = document.getElementById("seleccionMenuCasas").value;
-    const mostrarPrimerFiltro = houseFilter(informationFirstCharacters, guardaSeleccionCasa);
-    console.log(mostrarPrimerFiltro);
+    const saveFirstHouseSelection = document.getElementById("seleccionMenuCasas").value;
+    const showfirtsfilter = houseFilter(informationFirstCharacters, saveFirstHouseSelection);
+    //console.log(showfirtsfilter);
     //console.log(guardaSeleccionCasa);
 
     //console.log(mostrarPrimerFiltro);
-    const cambioDos = document.querySelector(".primeraMuestraPersonajes");
-    cambioDos.innerHTML = containerInformation(mostrarPrimerFiltro);
+    //aqui hacemos el cambio dos donde el inner inyecta al html lo que va a mostrar
+    const showtwo = document.querySelector(".primeraMuestraPersonajes");
+    showtwo.innerHTML = containerInformation(showfirtsfilter);
 
 });
-//const cambioDos = document.querySelector(".primeraMuestraPersonajes");
-//cambioDos.innerHTML = showPersonajes(mostrarPrimerFiltro);
-//console.log(mostrarPrimerFiltro);
+
+//esta constante guarda el filtro de los patronus
+const saveFilterPatronus = patronusFilter(informationFirstCharacters);
+console.log(saveFilterPatronus);
 
 
-const filtrandoPatronus = patronusFilter(informationFirstCharacters);
-console.log(filtrandoPatronus);
-const showPatronus = (informationFirstCharacters) => {
-    return informationFirstCharacters.map(
-            (gente) =>
-            `<div class="contenedorDePersonajes">
-            <img src="" alt=""/>
-            <p>${gente.name}</p>
-            <p>${gente.patronus}</p>
-        </div>`
-        )
-        .join("");
-
-};
-
-const cambio3 = document.querySelector(".primeraMuestraPersonajes");
-cambio3.innerHTML = showPatronus(informationFirstCharacters);
+//esto inyecta al html
+const showthree = document.querySelector(".primeraMuestraPersonajes");
+showthree.innerHTML = showPatronus(informationFirstCharacters);
 //console.log(cambio.innerHTML);
 
-function funcionMostrarPatronus() {
-    let mostrarPrincipales = document.getElementById("loQueVoyAmostrar");
-    if (mostrarPrincipales.style.display === "none") {
-        mostrarPrincipales.style.display = "block";
-    } else {
-        mostrarPrincipales.style.display = "none";
-    }
-}
-document.getElementById("item2").addEventListener("click", funcionMostrarPatronus)
+
+document.getElementById("item2").addEventListener("click", showAndHidePatronus)
+
+//Lo siguiente guarda y muestra el filtro de varitas
+const saveFilterWands = wandFilter(informationFirstCharacters);
+console.log(saveFilterWands);
+
+
+//esto inyecta al html
+const showFour = document.querySelector(".primeraMuestraPersonajes");
+showFour.innerHTML = showWand(informationFirstCharacters);
+//console.log(cambio.innerHTML);
+
+
+document.getElementById("item3").addEventListener("click", showAndHideWand)
