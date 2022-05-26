@@ -1,4 +1,4 @@
-import { reduceData, containerInformation, houseFilter, patronusFilter } from './data.js';
+import { reduceData, containerInformation, showAndHideCharacters, houseFilter, patronusFilter } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/harrypotter/data.js';
 //en esta constante estamos guardando a los personajes en total, antes de reducirla
@@ -14,15 +14,8 @@ const showOne = document.querySelector(".primeraMuestraPersonajes");
 showOne.innerHTML = containerInformation(informationFirstCharacters);
 //console.log(cambio.innerHTML);
 
-function funcionMostrarPersonajes() {
-    let mostrarPrincipales = document.getElementById("loQueVoyAmostrar");
-    if (mostrarPrincipales.style.display === "none") {
-        mostrarPrincipales.style.display = "block";
-    } else {
-        mostrarPrincipales.style.display = "none";
-    }
-}
-document.getElementById("item1").addEventListener("click", funcionMostrarPersonajes)
+//este es el click que oculta y muestra a los personajes principales
+document.getElementById("item1").addEventListener("click", showAndHideCharacters)
 
 
 

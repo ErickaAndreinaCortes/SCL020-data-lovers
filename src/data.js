@@ -44,6 +44,16 @@ export const containerInformation = (informationFirstCharacters) => {
         .join("");
 
 };
+
+//Esta función oculta y muestra los personajes
+export function showAndHideCharacters() {
+    let mostrarPrincipales = document.getElementById("loQueVoyAmostrar"); //preguntar si esta linea puede ir aquí
+    if (mostrarPrincipales.style.display === "none") {
+        mostrarPrincipales.style.display = "block";
+    } else {
+        mostrarPrincipales.style.display = "none";
+    }
+}
 //esta función filtra a los personajes por sus casas, retornadonos el filtro realizado en la data reducida
 export const houseFilter = (filterArrayForId, houseSelection) => {
 
