@@ -22,7 +22,7 @@ export const reduceData = (arrayCharacters) => {
             item.id == "744" || item.id == "123" ||
             item.id == "327" || item.id == "679" ||
             item.id == "382" || item.id == "350");
-        //console.log(arrayFiltradoPorID);
+        //console.log(reduceData);
         return filterArrayForId;
 
     }
@@ -45,7 +45,7 @@ export const containerInformation = (informationFirstCharacters) => {
 
 };
 
-//Esta función oculta y muestra los personajes
+/*Esta función oculta y muestra los personajes
 export const showAndHideCharacters = () => {
         let showAndHideOne = document.getElementById("loQueVoyAmostrar"); //preguntar si esta linea puede ir aquí
         if (showAndHideOne.style.display === "none") {
@@ -53,37 +53,65 @@ export const showAndHideCharacters = () => {
         } else {
             showAndHideOne.style.display = "none";
         }
-    }
-    //esta función filtra a los personajes por sus casas, retornadonos el filtro realizado en la data reducida
+    }*/
+//esta función filtra a los personajes por sus casas, retornadonos el filtro realizado en la data reducida
 export const houseFilter = (filterArrayForId, houseSelection) => {
 
-        return filterArrayForId
-            .filter((houses) => houses.house == houseSelection);
-
-    }
-    /*esta función nos filtra los patronus de cada personaje en la data reducida, 
-    donde le estamos asignando dos parametros, 
-    el primero es la data y el segundo es la selección que hace el usuario.*/
-export const patronusFilter = (filterArrayForId, patronus) => {
     return filterArrayForId
-        .filter((animal) => animal.patronus == patronus);
+        .filter((houses) => houses.house == houseSelection);
+
 }
 
-
-export const showPatronus = (informationFirstCharacters) => {
+/*esta función nos filtra las varitas de cada personaje en la data reducida, 
+donde le estamos asignando dos parametros, 
+el primero es la data y el segundo es la selección que hace el usuario.*/
+export const showWand = (informationFirstCharacters) => {
     return informationFirstCharacters.map(
-            (gente) =>
+            (people) =>
             `<div class="contenedorDePersonajes">
-            <img src="" alt=""/>
-            <p>${gente.name}</p>
-            <p>${gente.patronus}</p>
-        </div>`
+                <img src="" alt=""/>
+                <p>${people.name}</p>
+                <p>${people.wand}</p>
+            </div>`
         )
         .join("");
 
 };
+export const wandFilter = (filterArrayForId, wandSelection) => {
+    console.log(wandSelection);
+    console.log(filterArrayForId);
+    const wandFilterDos = filterArrayForId.filter(wood => wood.wand);
+    let personajes = [];
+    wandFilterDos.forEach((Element) => {
+        console.log(Element.wand.length);
+        if (wandSelection == Element.wand.match(wandSelection)) {
+            personajes.push(Element)
+        }
+    })
+    return (personajes);
+}
 
-//preguntar si puede quedar sin parametro de entrada
+
+
+
+
+
+export const selecSortAz = (informationFirstCharacters) => {
+
+    return informationFirstCharacters.sort((a, b) => {
+        if (a.name < b.name) {
+            return -1;
+        }
+        if (a.name > b.name) {
+            return 1;
+        }
+        return 0;
+    });
+
+};
+
+
+/*preguntar si puede quedar sin parametro de entrada
 export const showAndHidePatronus = () => {
     let showAndHidetwo = document.getElementById("loQueVoyAmostrar");
     if (showAndHidetwo.style.display === "none") {
@@ -99,21 +127,18 @@ export const wandFilter = (filterArrayForId, wand) => {
     return filterArrayForId
         .filter((wood) => wood.wand == wand);
 }
-
-
 export const showWand = (informationFirstCharacters) => {
     return informationFirstCharacters.map(
             (people) =>
             `<div class="contenedorDePersonajes">
-            <img src="" alt=""/>
-            <p>${people.name}</p>
-            <p>${people.wand}</p>
-        </div>`
+                <img src="" alt=""/>
+                <p>${people.name}</p>
+                <p>${people.wand}</p>
+            </div>`
         )
         .join("");
 
 };
-
 //preguntar si puede quedar sin parametro de entrada
 export const showAndHideWand = () => {
     let showAndHideThree = document.getElementById("loQueVoyAmostrar");
