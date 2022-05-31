@@ -37,6 +37,7 @@ export const containerInformation = (informationFirstCharacters) => {
                 <p>${gente.species}</p>
                 <p>${gente.house}</p>
                
+               
             </div>`
         )
         .join("");
@@ -89,8 +90,7 @@ export const selecSortAz = (informationFirstCharacters) => {
     return informationFirstCharacters.sort((a, b) => {
         if (a.name < b.name) {
             return -1;
-        }
-        if (a.name > b.name) {
+        } else if (a.name > b.name) {
             return 1;
         }
         return 0;
@@ -98,11 +98,10 @@ export const selecSortAz = (informationFirstCharacters) => {
 };
 
 export const selecSortZa = (informationFirstCharacters) => {
-    return informationFirstCharacters.sort((b, a) => {
+    return informationFirstCharacters.sort((a, b) => {
         if (b.name < a.name) {
             return -1;
-        }
-        if (a.name > b.name) {
+        } else if (b.name > a.name) {
             return 1;
         }
         return 0;

@@ -5469,6 +5469,7 @@ export default {
             "birth": "31 July, 1980",
             "death": null,
             "species": "Human",
+
             "ancestry": "Half-blood",
             "gender": "Male",
             "hair_color": "Jet-black",

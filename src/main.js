@@ -36,18 +36,19 @@ document.getElementById("seleccionMenuVaritas").addEventListener("change", () =>
 
 });
 
-document.getElementById("seleccionMenuAlfabeticamente").addEventListener("change", () => {
-    const menuSort = document.getElementById("ascendente").value;
-    const organize = selecSortAz(informationFirstCharacters, menuSort);
-    const showFour = document.querySelector(".primeraMuestraPersonajes");
-    showFour.innerHTML = containerInformation(organize);
+document.getElementById("seleccionMenuAlfabeticamente").addEventListener("change", (event) => {
+    let validacion = (event.target.value);
+    console.log(informationFirstCharacters);
 
-});
 
-document.getElementById("seleccionMenuAlfabeticamente").addEventListener("change", () => {
-    const menuSort = document.getElementById("descendente").value;
-    const organizeTwo = selecSortZa(informationFirstCharacters, menuSort);
-    console.log(organizeTwo);
-    const showFive = document.querySelector(".primeraMuestraPersonajes");
-    showFive.innerHTML = containerInformation(organizeTwo);
+    if (validacion == "Ascendente") {
+        const organizeThree = selecSortAz(informationFirstCharacters);
+        const showFive = document.querySelector(".primeraMuestraPersonajes");
+        showFive.innerHTML = containerInformation(organizeThree);
+
+    } else if (validacion == "Descendente") {
+        const organizeTwo = selecSortZa(informationFirstCharacters);
+        const showFive = document.querySelector(".primeraMuestraPersonajes");
+        showFive.innerHTML = containerInformation(organizeTwo);
+    }
 });
