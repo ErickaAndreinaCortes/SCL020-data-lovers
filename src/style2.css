@@ -10,7 +10,6 @@
                         font-size: 12px;
                         line-height: 20px;
                         text-align: center;
-                        color: #f0ead2;
                     }
                     
                     @media screen and (min-width: 430px) {
@@ -44,7 +43,7 @@
                             text-align: center;
                             color: #f0ead2;
                         }
-                        p {
+                        .parrafo {
                             font-family: "Oswald";
                             font-weight: 600;
                             font-size: 20px;
@@ -66,7 +65,7 @@
                             /*contenedor media query*/
                             .contenedor {
                                 width: 80%;
-                                height: 100vh;
+                                height: 200vh;
                                 top: 5%;
                                 margin: 0 auto;
                                 background: #471A1B;
@@ -132,11 +131,12 @@
                             #menu {
                                 background: #fcbf49;
                                 width: 80%;
-                                height: 10%;
+                                height: 5%;
                                 padding: 5px 5px 9px 5px;
                                 justify-content: center;
                                 margin-left: auto;
                                 margin-right: auto;
+                                margin-bottom: 0%;
                             }
                         }
                         .barra {
@@ -164,10 +164,24 @@
                         #menusDeSeleccion {
                             display: flex;
                             justify-content: center;
+                            margin-right: 20px;
                         }
                     }
                     
                     .primeraMuestraPersonajes {
                         display: flex;
                         flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    .contenedorDePersonajes {
+                        width: 160px;
+                        height: 300px;
+                        margin-top: 30px;
+                        margin-left: 20px;
+                        border: solid #f9eae1;
+                        background-color: #fcbf49;
+                        font-size: 20px;
+                        color: #471A1B;
                     }
