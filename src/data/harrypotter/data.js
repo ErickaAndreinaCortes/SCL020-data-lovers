@@ -1931,6 +1931,7 @@ export default {
         {
             "id": 117,
             "name": "Cedric Diggory",
+            "img": "https://i.ibb.co/MGysmrm/Albus-Dumbledore-3.gif",
             "birth": "between 1 September and 30 October 1977",
             "death": "24 June, 1995 (aged 17)",
             "species": "Human",
@@ -2035,6 +2036,7 @@ export default {
         {
             "id": 123,
             "name": "Dobby",
+            "img":"https://i.ibb.co/94Xq53q/Albus-Dumbledore-4.gif",
             "birth": "28 June, unknown year",
             "death": "Late March, 1998",
             "species": "House-elf",
@@ -4208,6 +4210,7 @@ export default {
         {
             "id": 254,
             "name": "Neville Longbottom",
+            "img":"https://i.ibb.co/JRrXPCY/Albus-Dumbledore-14.gif",
             "birth": "30 July, 1980",
             "death": null,
             "species": "Human",
@@ -4300,6 +4303,7 @@ export default {
         {
             "id": 258,
             "name": "Remus Lupin",
+            "img": "https://i.ibb.co/JxBjLZ9/Dise-o-sin-t-tulo-4.gif",
             "birth": "10 March, 1960",
             "death": "2 May, 1998 (aged 38)",
             "species": "Werewolf (formerly Human)",
@@ -4467,6 +4471,7 @@ export default {
         {
             "id": 267,
             "name": "Draco Malfoy",
+            "img":"https://i.ibb.co/MgHQD6d/Albus-Dumbledore-5.gif",
             "birth": "5 June, 1980",
             "death": null,
             "species": "Human",
@@ -5469,7 +5474,7 @@ export default {
             "birth": "31 July, 1980",
             "death": null,
             "species": "Human",
-
+            "img":"https://i.ibb.co/K9xYvdW/Albus-Dumbledore-9.gif",
             "ancestry": "Half-blood",
             "gender": "Male",
             "hair_color": "Jet-black",
@@ -5498,6 +5503,7 @@ export default {
         {
             "id": 327,
             "name": "James Potter I",
+            "img":"https://i.ibb.co/KFJt45G/Albus-Dumbledore-11.gif",
             "birth": "27 March, 1960",
             "death": "31 October, 1981 (aged 21)",
             "species": "Human",
@@ -5874,6 +5880,7 @@ export default {
         {
             "id": 350,
             "name": "Tom Riddle (Voldemort)",
+            "img":"https://i.ibb.co/1sG8CNV/Albus-Dumbledore-17.gif",
             "birth": "31 December, 1926",
             "death": "2 May, 1998 (aged 71)",
             "species": "Human",
@@ -6435,6 +6442,7 @@ export default {
         {
             "id": 382,
             "name": "Severus Snape",
+            "img":"https://i.ibb.co/5Ww1ttg/Albus-Dumbledore-16.gif",
             "birth": "9 January 1960",
             "death": "2 May 1998 (aged 38)",
             "species": "Human",
@@ -7294,6 +7302,7 @@ export default {
         {
             "id": 472,
             "name": "Fred Weasley",
+            "img": "https://i.ibb.co/ZTxDKkx/Albus-Dumbledore-6.gif",
             "birth": "1 April, 1978",
             "death": "2 May, 1998 (aged 20)",
             "species": "Human",
@@ -7323,6 +7332,7 @@ export default {
             "id": 473,
             "name": "George Weasley",
             "birth": "1 April, 1978",
+            "img": "https://i.ibb.co/W0Wsz17/Albus-Dumbledore-7.gif",
             "death": null,
             "species": "Human",
             "ancestry": "Pure-blood",
@@ -7389,6 +7399,7 @@ export default {
         {
             "id": 476,
             "name": "Ronald Weasley",
+            "img": "https://i.ibb.co/54Z2Mgj/Albus-Dumbledore-15.gif",
             "birth": "1 March, 1980",
             "death": null,
             "species": "Human",
@@ -9194,6 +9205,7 @@ export default {
             "id": 587,
             "name": "Hermione Granger",
             "birth": "19 September, 1979",
+            "img":"https://i.ibb.co/P10t0wg/Albus-Dumbledore-10.gif",
             "death": null,
             "species": "Human",
             "ancestry": "Muggle-born",
@@ -10749,6 +10761,7 @@ export default {
         {
             "id": 680,
             "name": "Lily J. Potter",
+            "img":"https://i.ibb.co/cDQNmCX/Albus-Dumbledore-18.gif",
             "birth": "30 January, 1960",
             "death": "31 October, 1981 (aged 21)",
             "species": "Human",
@@ -11759,6 +11772,7 @@ export default {
         {
             "id": 743,
             "name": "Ginny Weasley",
+            "img": "https://i.ibb.co/jHYt6sM/Albus-Dumbledore-8.gif",
             "birth": "11 August, 1981",
             "death": null,
             "species": "Human",
@@ -11788,6 +11802,7 @@ export default {
         {
             "id": 744,
             "name": "Molly Weasley",
+            "img":"https://i.ibb.co/BgTmhQS/Albus-Dumbledore-13.gif",
             "birth": "30 October, 1949 or 1950",
             "death": null,
             "species": "Human",
@@ -11999,6 +12014,7 @@ export default {
         },
         {
             "id": 756,
+            "img": "https://i.ibb.co/BPdZX8z/Albus-Dumbledore-2.gif",
             "name": "Albus Dumbledore",
             "birth": "Late August 1881",
             "death": "30 June, 1997 (aged 115)",

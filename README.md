@@ -1,5 +1,71 @@
-# Data Lovers
+## Datalovers:
 
+
+###### 
+## 
+
+
+## Sprints:
+
+### 
+* ###### Sprint 1: Al comienzo del Sprint organizamos nuestros objetivos en [trello](https://trello.com/b/kgFnrPCj/data-lovers-harry-potter) y desarrollamos una lista de cosas por hacer, dentro de esta lista situamos como primeros objetivos el desarrollar las historias de usuarios, [encuesta](https://forms.gle/qRV73SP5DgxG5LMn6) y [desarrollo de prototipos](https://www.figma.com/file/i2n1U1wJcWn1w9fW7Zy0mk/Data-lover-Harry-Potter?node-id=0%3A1). También pudimos establecer nuestras primeras directrices como que nos centraremos en los personajes principales, ya que no encontramos factores comunes dentro de la data y esto definiría nuestras historias de usuarios, ya que definimos que sería una página enfocada en fanáticos de la saga, donde podría encontrar información de los personajes, sus varitas, patronus y acceso a links como merchandising. Como último pudimos realizar el forke al proyecto, y el cierre de sprint ya estábamos trabajando en el html y css. 
+ 
+
+* *Insertar imágenes*
+
+* ###### Sprint 2: Al comienzo del sprint fortalecimos las historias de usuario, encontrando pequeños detalles dentro de la misma saga, como por ejemplo el mapa del merodeador y lo utilizamos como nuestro background principal, ya que queríamos recrear la experiencia de usar el mapa y que al entrar a esta página se visualiza esto con la icónica frase que se usa para abrir el mapa "Juro solemnemente que mis intenciones no son buenas" para luego encontrar dentro de la página el "travesura realizada", encontramos que estos pequeños detalles guiarán al usuario al mundo de Harry Potter, no solo con frases si no con colores símbolos de Hogwarts, por lo mismo trabajamos en el html y css con los atributos mencionados anteriormente. 
+
+* ###### Sprint 3: El tercer sprint se centró en filtrar la data, como mencionamos en el sprint 1 nos dimos cuenta de que nuestros personajes principales no contaban con factores en común por lo que decidimos seleccionar en una lista quienes serían los personajes a llamar y de primer momento, pensamos en llamarlos por su nombre, pero era muy amplio y llegamos al acuerdo de llamarlos por Id, definiendo nuestra primera función. Este sprint trató de informarse mucho sobre la data.
+
+* ###### Sprint 4: En el cuarto sprint pudimos adentrarnos más en la data, ya que teníamos que mostrarla en pantalla y esto nos resultó bastante complicado, pero pudimos realizar en diferentes OH, recopilamos lo necesario para mostrarla. Al final del sprint tuvimos que realizar refactorizaciones dentro de nuestro código, ya que no contaba con el orden esperado y estábamos trabajando en español.
+
+* ###### Sprint 5: El sprint 5 nos sirvió para desarrollar más a fondo todo lo que se relacionaba con el estilo del proyecto como presentar las fichas de los personajes, también desarrollamos los test. 
+
+### Historias de Usuarios
+
+1. Item 1
+1. Item 2
+1. Item 3
+  1. Item 3a
+  1. Item 3b
+
+## Images
+
+![This is a alt text.](/image/sample.png "This is a sample image.")
+
+## Links
+
+You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
+
+## Blockquotes
+
+> Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz.
+>
+>> Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
+
+## Tables
+
+| Left columns  | Right columns |
+| ------------- |:-------------:|
+| left foo      | right foo     |
+| left bar      | right bar     |
+| left baz      | right baz     |
+
+## Blocks of code
+
+```
+let message = 'Hello world';
+alert(message);
+```
+
+## Inline code
+
+
+
+
+
+
+#Data Lovers
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)

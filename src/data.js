@@ -18,7 +18,7 @@ export const reduceData = (arrayCharacters) => {
         item.id == "743" || item.id == "267" ||
         item.id == "254" || item.id == "756" ||
         item.id == "744" || item.id == "123" ||
-        item.id == "327" || item.id == "679" ||
+        item.id == "327" || item.id == "680" ||
         item.id == "382" || item.id == "350");
     //console.log(reduceData);
     return filterArrayForId;
@@ -32,7 +32,7 @@ export const containerInformation = (informationFirstCharacters) => {
             (gente) =>
             `<div class="contenedorDePersonajes">
                 <img src="" alt=""/>
-                <p>${gente.name}</p>
+                <img src="${gente.img}" alt=""/>
                 <p>${gente.birth}</p>
                 <p>${gente.species}</p>
                 <p>${gente.house}</p>
@@ -51,6 +51,7 @@ export const showBlood = (informationFirstCharacters) => {
     return informationFirstCharacters.map((people) =>
             `<div class="contenedorDePersonajes">
                 <img src="" alt=""/>
+                <img src="${people.img}" alt=""/>
                 <p>${people.name}</p>
                 <p>${people.ancestry}</p>
             </div>`
@@ -65,6 +66,7 @@ export const showWand = (informationFirstCharacters) => {
             (people) =>
             `<div class="contenedorDePersonajes">
                 <img src="" alt=""/>
+                <img src="${people.img}" alt=""/>
                 <p>${people.name}</p>
                 <p>${people.wand}</p>
             </div>`
