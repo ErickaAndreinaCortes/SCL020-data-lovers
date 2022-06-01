@@ -4303,7 +4303,7 @@ export default {
         {
             "id": 258,
             "name": "Remus Lupin",
-            "img": "https://i.ibb.co/JxBjLZ9/Dise-o-sin-t-tulo-4.gif",
+            "img": "https://i.ibb.co/XpdnLjt/Albus-Dumbledore-19.gif",
             "birth": "10 March, 1960",
             "death": "2 May, 1998 (aged 38)",
             "species": "Werewolf (formerly Human)",
