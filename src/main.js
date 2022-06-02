@@ -6,6 +6,7 @@ const characters = data.characters;
 
 //esta variable guarda a la data reducida
 const informationFirstCharacters = reduceData(characters);
+console.log(informationFirstCharacters);
 
 
 //este metodo nos permite tomar el id y que se escuche el cambio que realice el usuario y se 
@@ -38,7 +39,7 @@ document.getElementById("seleccionMenuVaritas").addEventListener("change", () =>
 
 document.getElementById("seleccionMenuAlfabeticamente").addEventListener("change", (event) => {
     let validacion = (event.target.value);
-    console.log(informationFirstCharacters);
+    //console.log(informationFirstCharacters);
 
 
     if (validacion == "Ascendente") {
