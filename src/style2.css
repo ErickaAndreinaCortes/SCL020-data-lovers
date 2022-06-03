@@ -164,7 +164,7 @@
                         #menusDeSeleccion {
                             display: flex;
                             gap: 30px;
-
+                            justify-content: center;
                         }
                     }
                     
@@ -172,7 +172,6 @@
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: center;
-                        
                     }
                     
                     .contenedorDePersonajes {
